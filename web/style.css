@@ -87,21 +87,16 @@ nav {
 }
 .personal {
     float: right;
-    /* padding: 0 7px; */
     height: 42px;
     line-height: 42px;
     margin: 0 15px 0 35px;
 }
-/*     .personal ul li a {
-    height: 42px;
-    line-height: 42px;
-} */
-/*     .personal img {
-    margin: 0px 5px;
-} */
-/*     .personal .head {
+.personal img {
+    margin: 0 5px;
+}
+.personal .head {
     margin-top: 4px;
-} */
+}
 .banner {
     height: 420px;
     background-color: #1c036c;
