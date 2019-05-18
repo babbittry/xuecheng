@@ -10,194 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>学成在线</title>
-    <style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    ul {       /*  去掉列表样式 */
-        list-style: none;
-    }
-    .clearfix:before, .clearfix:after {        /*  清除浮动 */
-        display: table;
-        content: ".";
-    }
-    .clearfix::after {
-        clear: both;
-    }
-    .clearfix {
-        *zoom: 1;
-    }
-    body {
-        background-color: #f3f5f7;
-    }
-    a {     /* 设置所有的连接文字颜色为#050505 */
-        color: #050505;
-        text-decoration: none;
-    }
-    input {     /* 所有表单边框为0 */
-        border: 0;
-        box-sizing: border-box;    /*  CSS3盒子模型border和padding都包含到width里面去 */
-    }
-    .container {
-        width: 1366px;
-        margin: 0 auto;
-    }
-
-    /* CSS初始化结束 */
-
-    header {
-        height: 100px;
-        overflow: hidden;       /* 防止外边距合并 */
-    }
-    nav {
-        width: 1366px;
-        height: 42px;
-        background-color: #1f3d5c;
-        margin: 0 auto;
-        margin-top: 30px;
-    }
-    .logo {
-        float: left;
-    }
-    .navbar {
-        float: left;
-        height: 42px;
-        line-height: 42px;
-        margin-left: 70px;
-    }
-    .navbar ul li {
-        float: left;
-    }
-    .navbar ul li a {
-        padding: 0 8px;     /* 上下是0，左右8px */
-        display: block;     /* a是行内块元素，如果要有高度，需要转成块级 */
-        height: 40px;
-    }
-    .navbar ul li a:hover {
-        border-bottom: 2px solid #00a4ff;
-    }
-    .search {
-        height: 38px;
-        width: 410px;       /* 360+50 */
-        border: 1px solid #00a4ff;
-        float: right;
-        margin: 1px 0;
-    }
-    .search input[type=text] {   /* 属性选择器 */
-        width: 360px;
-        height: 38px;
-        background-color: #f3f5f7;
-        padding-left: 20px;
-        float: left;
-    }
-    .search input[type=submit] {
-        width: 50px;
-        height: 38px;
-        background-color: #00a4ff;
-        float: left;
-        background: #00a4ff url(images/search.png) center center no-repeat;
-    }
-    .personal {
-        float: right;
-        height: 42px;
-        line-height: 42px;
-        margin: 0 15px 0 35px;
-    }
-    .personal img {
-        margin: 0 5px;
-    }
-    .banner {
-        height: 420px;
-        background-color: #1c036c;
-    }
-    .banner-in {
-        height: 420px;
-        background: url(images/banner.png) 0 0 no-repeat;
-       
-    }
-    .slidebar {
-        height: 420px;
-        width: 190px;
-        background-color: rgba(0, 0, 0, 0.2);
-        float: left;
-    }
-    .banner .slidebar ul li a {
-        color: #fff;
-        font-size: 14px;
-        padding: 0 20px;    /* 设置内边距上下0，左右20 */
-        display: block;     /* a是行内元素，没有大小，需要转换 */
-        height: 45px;
-        line-height: 45px;     /* 单行垂直居中: 个人经验，很多情况下，有了行高，不用给高度 */
-    }
-    .slidebar ul li a span {
-        float: right;
-        font-family: arial;     /* 一般的符号都用arial字体，比较细 */
-    }
-    .banner .slidebar ul li a:hover {
-        color: #00a4ff;
-    }
-    .banner-in .table {
-        width: 230px;
-        height: 300px;
-        float: right;
-        margin-top: 50px;
-        background-color: #fff;
-    }
-    .banner-in .table dt {
-        height: 50px;
-        color: #fff;
-        font-size: 20px;
-        text-align: center;
-        line-height: 50px;
-        background-color: #9bceea;
-        font-weight: bold;     /*  文字加粗 */
-        letter-spacing: 2px;
-        margin-bottom: 10px;
-    }
-    .banner-in .table dd {
-        height: 60px;
-        width: 193px;
-        margin: 0 auto;
-        border-bottom: 1px solid #a5a5a5;
-        padding-top: 12px;
-        box-sizing: border-box;
-    }
-    .banner-in .table dd a h4 {
-        font-size: 16px;
-        font-weight: normal;
-        color: #4e4e4e;
-    }
-    .banner-in .table dd a p {
-        font-size: 14px;
-        color: #a5a5a5;
-    }
-    .banner-in .table dd:last-child {
-        border: 0;
-    }
-    .banner-in .table dd .allCourse {
-        text-align: center;
-        height: 38px;
-        border: 1px solid #00a4ff;
-        display: block;
-        line-height: 38px;
-        color: #00a4ff;
-        font-weight: 700;
-    }
-    .banner-in .table dd .goOn:hover h4,
-    .banner-in .table dd .goOn:hover p {
-        color: #00a4ff;
-    }
-    .banner-in .table dd .allCourse:hover {
-        background-color: #00a4ff;
-        color: #fff;
-    }
-    .recommend {
-        height: 60px;
-        background-color: #fff;
-        margin-top: 8px;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -216,8 +29,12 @@
             </div>
             <!-- 个人中心 -->
             <div class="personal">
-                <a href="#">个人中心<img src="images/ling.png" alt=""></a>
-                <a href="#"><img src="images/head.png" alt="">qq-leishui</a>
+                <ul>
+                    <li><a href="#">消息<img src="images/ling.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/head.png" alt="" class="head">qq-leishui</a></li>
+                </ul>
+                <!-- <a href="#">消息<img src="images/ling.png" alt=""></a>
+                <a href="#"><img src="images/head.png" alt="" class="head">qq-leishui</a> -->
             </div>
             <!-- 搜索框 -->
             <div class="search">
@@ -274,7 +91,14 @@
     </div>
     <!-- 精品推荐 -->
     <div class="recommend container">
-        
+        <a href="#">精品推荐</a>
+        <a href="#">jQuery</a>
+        <a href="#">Spark</a>
+        <a href="#">MySql</a>
+        <a href="#">JavaWeb</a>
+        <a href="#">TensorFlow</a>
+        <a href="#">Python</a>
+        <a href="#">修改兴趣</a>
     </div>
 </body>
 </html>
