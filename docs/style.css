@@ -226,3 +226,106 @@ nav {
     border: 0;
     font-size: 14px;
 }
+.recom-products {
+    margin-top: 35px;
+}
+.recom-hd {
+    height: 40px;
+}
+.recom-hd h4 {
+    float: left;
+    color: #494949;
+}
+.recom-hd a {
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #a5a5a5;
+}
+.recom-hd a:hover {
+    color: #00a4ff;
+}
+.recom-bd ul li {
+    width: 260px;
+    height: 270px;
+    background-color: #fff;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    float: left;
+    margin-right: 16.5px;
+    margin-top: 15px;
+}
+.recom-bd ul li:nth-child(5n) {     /* 5n表示5的整数倍 */
+    margin-right: 0;
+}
+.recom-bd ul li img {
+    width: 260px;
+}
+.recom-bd ul li h5,
+.recom-bd ul li p {
+    padding: 0 20px 0 24px;
+    margin-top: 12px;
+}
+.recom-bd ul li h5 {
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.recom-bd ul li p {
+    color: #999;
+}
+.recom-bd ul li p span {
+    color: #ff7c2b;
+}
+footer {
+    height: 270px;
+    background-color: #fff;
+    margin-top: 100px;
+}
+.footer-in {
+    padding-top: 30px;
+}
+.footer-l {
+    float: left;
+}
+.footer-in p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #999;
+    margin-top: 20px;
+}
+.footer-in .footer-l a {
+    display: block;
+    height: 33px;
+    width: 118px;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 33px;
+    color: #00a4ff;
+    margin-top: 15px;
+}
+.footer-in .footer-l a:hover {
+    color: #fff;
+    background-color: #00a4ff;
+}
+
+.footer-r {
+    float: right;
+    color: #333;
+}
+.footer-r dl {
+    float: left;
+    width: 225px;
+}
+.footer-r dt {
+    font-size: 16px;
+    line-height: 30px;
+}
+.footer-r dd {
+    font-size: 12px;
+    line-height: 20px;
+}
+.footer-r dd a:hover {
+    color: #00a4ff;
+}
