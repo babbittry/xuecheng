@@ -93,10 +93,8 @@ nav {
     margin: 0 15px 0 35px;
 }
 .personal img {
-    margin: 0 5px;
-}
-.personal .head {
-    margin-top: 4px;
+    margin: 0 8px;
+    vertical-align: middle;
 }
 .banner {
     height: 420px;
