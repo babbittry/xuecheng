@@ -68,6 +68,7 @@ nav {
     height: 38px;
     width: 410px;       /* 360+50 */
     border: 1px solid #00a4ff;
+    outline: 0;
     float: right;
     margin: 1px 0;
 }
