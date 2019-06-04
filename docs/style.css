@@ -173,6 +173,7 @@ nav {
     line-height: 38px;
     color: #00a4ff;
     font-weight: 700;
+    transition: all 0.5s;   /* 设置过渡效果 */
 }
 .banner-in .table dd .goOn:hover h4,
 .banner-in .table dd .goOn:hover p {
@@ -249,10 +250,15 @@ nav {
     width: 260px;
     height: 270px;
     background-color: #fff;
-    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
     float: left;
     margin-right: 16.5px;
     margin-top: 15px;
+    position: relative;
+    transition:  2s;
+}
+.recom-bd ul li:hover {
+    top: -5px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 }
 .recom-bd ul li:nth-child(5n) {     /* 5n表示5的整数倍 */
     margin-right: 0;
