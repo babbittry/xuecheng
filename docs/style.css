@@ -231,6 +231,7 @@ nav {
 }
 .recom-hd {
     height: 40px;
+ 
 }
 .recom-hd h4 {
     float: left;
@@ -254,11 +255,11 @@ nav {
     margin-right: 16.5px;
     margin-top: 15px;
     position: relative;
-    transition:  2s;
+    transition: all 0.2s;
 }
 .recom-bd ul li:hover {
-    top: -5px;
-    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: translate3d(0, -2px, 0);
 }
 .recom-bd ul li:nth-child(5n) {     /* 5n表示5的整数倍 */
     margin-right: 0;
